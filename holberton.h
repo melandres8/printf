@@ -5,10 +5,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * struct form - Global structure
+ * @formts: Struct.
+ * @func: Funcion to a pointer.
+ */
 typedef struct form
 {
-	char *formt;
-	int (*func)();
+	char *formts;
+	int (*func)(va_list);
 } forms;
 
 int _putchar(char c);
