@@ -1,3 +1,21 @@
+#include "holberton.h"
+
+/**
+ * func_char - Print a char type.
+ * @str: Char type.
+ * Return: Number of chacacters.
+ */
+int func_char(va_list str)
+{
+	char c;
+
+	c = va_arg(str, int);
+
+	_putchar(c);
+
+	return (1);
+}
+
 /**
  * func_string - Validate a string.
  * @str: String container.
