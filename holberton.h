@@ -18,7 +18,10 @@ typedef struct form
 
 int _putchar(char c);
 int _printf(const char *format, ...);
+
+/*Print Format functions*/
 int func_char(va_list chr);
 int func_string(va_list str);
-int func_di(va_list di)
+int func_di(va_list di);
+
 #endif
