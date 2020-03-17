@@ -38,3 +38,53 @@ int func_string(va_list str)
 
 	return (i);
 }
+
+/**
+ * func_di - prints a decimal and integer
+ * @di: decimal to print
+ *
+ * Return: number of chars and digits printed
+ */
+int func_di(va_list di)
+{
+	int a[10];
+	int n, j, add, m, counter;
+
+	n = va_arg(di, int);
+	counter = 0;
+	m = 1000000000;
+
+	a[0] = n / m;
+
+	j = 1;
+	while (j < 10)
+	{
+		m = m / 10;
+		a[j] = (n / m) % 10;
+		j++;
+	}
+	/*Negative numbers*/
+	j = 0;
+	if (n < 0)
+	{
+		_putchar('-');
+		counter++;
+		while (j < 10)
+		{
+			a[j] *= -1;
+			j++;
+		}
+	}
+	j = 0, add = 0;
+	while (j < 10)
+	{
+		add += a[j];
+		if (add != 0 || j == 9)
+		{
+			_putchar(a[j] + '0');
+			counter++;
+		}
+	j++;
+	}
+	return (counter);
+}
