@@ -88,3 +88,31 @@ int func_di(va_list di)
 	}
 	return (counter);
 }
+/**
+ * func_rev - Print a string in reverse.
+ * @r: String argument
+ * Return: Number of characters
+ */
+int func_rev(va_list r)
+{
+	int i, counter = 0;
+	char *rev;
+
+	rev = va_arg(r, char *);
+	if (rev != NULL)
+	{
+		for (i = 0; rev[i]; i++)
+		{}
+
+		for (i = i - 1; i >= 0; i--)
+		{
+			_putchar(rev[i]);
+			counter++;
+		}
+	}
+	else
+	{
+		rev = "(nil)";
+	}
+	return (counter);
+}
