@@ -14,6 +14,7 @@ static int (*validate_format(const char *format))(va_list)
 		{"i", func_di},
 		{"d", func_di},
 		{"R", func_rot13},
+		{"r", func_rev},
 		{NULL, NULL}
 	};
 
