@@ -1,0 +1,20 @@
+.TH man 3 "17 March 2020" "1.0" "_printf man page"
+.SH NAME
+.B _printf
+- Formatted output conversion and print data.
+.SH SYNOPSIS
+.B #include "holberton.h"
+
+.B int _printf(const char *
+.I format
+.B , ...)
+
+.B _printf(
+.I FORMAT,
+.I ARGUMENT
+.B )
+.SH DESCRIPTION
+.B _printf()
+Print data validated by a
+.I format
+that we pass as a parameter to the function specifying the output of the entered data.
