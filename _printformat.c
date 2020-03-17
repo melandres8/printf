@@ -11,6 +11,8 @@ static int (*validate_format(const char *format))(va_list)
 	forms formt[] = {
 		{"c", func_char},
 		{"s", func_string},
+		{"i", func_di},
+		{"d", func_di},
 		{NULL, NULL}
 	};
 
@@ -71,13 +73,13 @@ int _printf(const char *format, ...)
 		_putchar(format[i]);
 		counter++;
 
-		if (format[i + 1] == '%')
+		if (format[i + 1] != '%')
 		{
-			i = i + 2;
+			i++;
 		}
 		else
 		{
-			i++;
+			i = i + 2;
 		}
 		i++;
 	}
