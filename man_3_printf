@@ -1,20 +1,30 @@
 .TH man 3 "17 March 2020" "1.0" "_printf man page"
 .SH NAME
 .B _printf
-- Formatted output conversion and print data.
+- Formatted output conversion and print data based in the original printf.
 .SH SYNOPSIS
-.B #include "holberton.h"
+.BI _printf
+.IR FORMAT [ARGUMENT]
 
-.B int _printf(const char *
-.I format
-.B , ...)
+.BI _printf
+.IR OPTION
 
-.B _printf(
-.I FORMAT,
-.I ARGUMENT
-.B )
+
 .SH DESCRIPTION
 .B _printf()
 Print data validated by a
-.I format
+.IR format
 that we pass as a parameter to the function specifying the output of the entered data.
+
+.SH Flags
+ %c \n Prints a character
+\n
+ %s \n Prints a string
+\n
+ %d \n Prints a decimal
+\n
+ %i \n Prints an integer
+\n
+ %r \n Prints a reversed string
+\n
+ %R \n Converts the input to a Rot13 code
