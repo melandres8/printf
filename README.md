@@ -36,4 +36,5 @@
 * **func_rot13.c:** - This function is peculiar, it allows us to rotate a string by implementing an encryption model, our ```_printf``` function does it through the ```%R``` format.
 
 [Alejandro Rusca](https://github.com/dondropo) | [@don_dropo](https://twitter.com/don_dropo)
+
 [Melkin Mosquera](https://github.com/melandres8) | [@melandres8](https://twitter.com/melandres8)
