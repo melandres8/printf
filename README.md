@@ -5,24 +5,24 @@
 **Prototype:** ```int _printf(const char *, ...);```
 
 ## Mandatory Tasks:
-- [ ] Write function that produces output with conversion specifiers ```c```, ```s```, and ```%```.
-- [x] Handle conversion specifiers ```d```, ```i```.
-- [x] Create a man page for your function.
+1. - [ ] Write function that produces output with conversion specifiers ```c```, ```s```, and ```%```.
+2. - [x] Handle conversion specifiers ```d```, ```i```.
+3. - [x] Create a man page for your function.
 
 ## Advanced Tasks:
-- [ ] Handle conversion specifier ```b```.
-- [ ] Handle conversion specifiers ```u```, ```o```, ```x```, ```X```.
-- [ ] Use a local buffer of 1024 chars in order to call write as little as possible.
-- [ ] Handle conversion specifier ```S```.
-- [ ] Handle conversion specifier ```p```.
-- [ ] Handle flag characters ```+```, space, and ```#``` for non-custom conversion specifiers.
-- [ ] Handle length modifiers ```l``` and ```h``` for non-custom conversion specifiers.
-- [ ] Handle the field width for non-custom conversion specifiers.
-- [ ] Handle the precision for non-custom conversion specifiers.
-- [ ] Handle the ```0``` flag character for non-custom conversion specifiers.
-- [x] Handle the custom conversion specifier ```r``` that prints the reversed string.
-- [x] Handle the custom conversion specifier ```R``` that prints the rot13'ed string.
-- [ ] All above options should work well together.
+1. - [ ] Handle conversion specifier ```b```.
+2. - [ ] Handle conversion specifiers ```u```, ```o```, ```x```, ```X```.
+3. - [ ] Use a local buffer of 1024 chars in order to call write as little as possible.
+4. - [ ] Handle conversion specifier ```S```.
+5. - [ ] Handle conversion specifier ```p```.
+6. - [ ] Handle flag characters ```+```, space, and ```#``` for non-custom conversion specifiers.
+7. - [ ] Handle length modifiers ```l``` and ```h``` for non-custom conversion specifiers.
+8. - [ ] Handle the field width for non-custom conversion specifiers.
+9. - [ ] Handle the precision for non-custom conversion specifiers.
+10. - [ ] Handle the ```0``` flag character for non-custom conversion specifiers.
+11. - [x] Handle the custom conversion specifier ```r``` that prints the reversed string.
+12. - [x] Handle the custom conversion specifier ```R``` that prints the rot13'ed string.
+13. - [ ] All above options should work well together.
 
 ## Files and functions description:
 * **_printf.c:** - The function ```_printf``` contains a large number of functions which allow us to make the relevant calculations for each format allowing us to return the number of characters that the function receives.
